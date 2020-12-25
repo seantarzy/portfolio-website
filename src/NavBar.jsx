@@ -11,14 +11,14 @@ export default class NavBar extends React.Component {
           <Link key = "Blogs" to="/blogs">Blogs </Link>
         </li>
         <li>
-          {/* <NavLink key = "about" to="/about">About</NavLink> */}
+          <Link key = "Projects" to="/Projects">Projects</Link>
         </li>
           
           <li>
-            {/* <NavLink key = "projects" to="/projects">Projects</NavLink> */}
+            <NavLink key = "videos" to="/videos">Videos</NavLink>
           </li>
           <li>
-            {/* <NavLink key = "blogs" to="/blogs">Blogs</NavLink> */}
+            <NavLink key = "about" to="/about">About</NavLink>
           </li>
       </ul>
       </Router>
