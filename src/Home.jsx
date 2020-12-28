@@ -5,13 +5,9 @@ class Home extends Component {
         return (
      <div>
         <div className="App-header">
-        <a
-          className="App-link"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
+      <h1 className = "animated-text">
           Sean Tarzy
-        </a>
+      </h1>
       </div>
     </div>
         );

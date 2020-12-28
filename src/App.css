@@ -1,6 +1,11 @@
 .App {
   text-align: center;
-  /* background-image: url('./assets/portfolio-background-image.jpg'); */
+  background-image: url('./assets/new-background-image.png');
+  background-size: contain;
+  background-position: center center;
+  text-align:center;
+  color:ivory;
+  /* margin:auto; */
 }
 
 .App-logo {
@@ -76,4 +81,24 @@ li a:hover {
 
 .black-text{
   color: black;
+}
+
+
+.animated-text{
+  position: absolute;
+  top: 100px;
+  left: 100px;
+  animation-name: fadeAndScale;
+  animation-duration: 2s;
+}
+
+
+@keyframes fadeAndScale{
+  from {
+    opacity: 0;
+    /* transform: scale3d(); */
+  }
+  to {
+    opacity: 1;
+  }
 }
