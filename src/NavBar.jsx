@@ -1,26 +1,31 @@
 import React from 'react'
-import {NavLink, BrowserRouter as Router, Link} from 'react-router-dom'
+import {NavLink, BrowserRouter as Router, withRouter, Link} from 'react-router-dom'
 
 export default class NavBar extends React.Component {
 
   render() {
     return (
         <Router>
+          <nav>
       <ul>
         <li>
-          <Link key = "Blogs" to="/blogs">Blogs </Link>
+          <a key = "Home" href="/">Home </a>
         </li>
         <li>
-          <Link key = "Projects" to="/Projects">Projects</Link>
+          <a key = "Blogs" href = "/blogs">Blogs </a>
+        </li>
+        <li>
+          <a key = "Projects" href="/projects">Projects</a>
         </li>
           
           <li>
-            <NavLink key = "videos" to="/videos">Videos</NavLink>
+            <a key = "videos" href="/videos">Videos</a>
           </li>
           <li>
-            <NavLink key = "about" to="/about">About</NavLink>
+            <a key = "about" href="/about">About</a>
           </li>
       </ul>
+          </nav>
       </Router>
     );
   }

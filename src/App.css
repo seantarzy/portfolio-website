@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  background-image: url('./assets/portfolio-background-image.jpg');
+  /* background-image: url('./assets/portfolio-background-image.jpg'); */
 }
 
 .App-logo {
@@ -52,10 +52,11 @@ nav{
 }
 
 ul {
-    background-color: black;
+  background-color: black;
   list-style-type: none;
   margin: 0;
   padding: 0;
+  height: 50px;
 }
 li {
   float: left;
@@ -71,4 +72,8 @@ li a {
 
 li a:hover {
   background-color: #111;
+}
+
+.black-text{
+  color: black;
 }
