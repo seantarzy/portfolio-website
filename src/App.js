@@ -2,8 +2,11 @@ import logo from './logo.svg';
 import './App.css';
 import React from 'react'
 import NavBar from './NavBar'
-import Blogs from './Blogs'
+import Blogs from './Blogs.jsx'
 import Home from './Home'
+import Projects from './Projects'
+import Videos from './Videos'
+import About from './About'
 import {
   Switch,
   Route,
@@ -31,7 +34,25 @@ class App extends React.Component{
             path="/blogs"
             key={"blogs"}
           >
-            <Blogs/>
+            <Blogs className= "blogs"/>
+          </Route>
+          <Route
+            path="/projects"
+            key={"projects"}
+          >
+            <Projects className= "projects"/>
+          </Route>
+          <Route
+            path="/videos"
+            key={"videos"}
+          >
+            <Videos className= "videos"/>
+          </Route>
+          <Route
+            path="/about"
+            key={"about"}
+          >
+            <About className= "about"/>
           </Route>
           <Route
             exact
