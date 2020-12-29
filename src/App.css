@@ -27,6 +27,301 @@
   text-align:center;
   color:ivory;
 }
+.comet :nth-child(1){
+    position: absolute;
+    offset-rotate: 100;
+    width: 10%;
+    height: 5%;
+    top: 100px;
+    left: 1020px;
+    animation: cometRide;
+    animation-duration: 15s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: initial;
+    animation-timing-function: linear;
+    animation-delay: 0.5s;
+}
+.spaceship :nth-child(1){
+  position: absolute;
+  top: 500px;
+  width: 10%;
+  height: 30%;
+  animation-name: spaceLaunch;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+}
+.satelite :nth-child(1){
+      position: absolute;
+      width: 10%;
+      height: 10%;
+      top: 350px;
+      left: 650px;
+      animation-name: sateliteHover;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+}
+.satelite :nth-child(2){
+      position: absolute;
+      width: 15%;
+      height: 15%;
+      top: 100px;
+      left: 520px;
+      animation-name: sateliteHover;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+}
+.satelite :nth-child(3){
+      position: absolute;
+      width: 25%;
+      height: 25%;
+      top: 100px;
+      left: 220px;
+      animation-name: sateliteHover;
+      animation-duration: 3s;
+      animation-direction: alternate;
+      animation-iteration-count: infinite;
+      animation-fill-mode: both;
+      animation-timing-function: ease-in-out;
+}
+.star-img {
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(1){
+  position: absolute;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(2){
+  position: absolute;
+  top: 130px;
+  left: 710px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(3){
+  position: absolute;
+  top: 120px;
+  left: 100px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: .5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(4){
+  position: absolute;
+  top: 120px;
+  left: 300px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(5){
+  position: absolute;
+  top: 220px;
+  left: 450px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(6){
+  position: absolute;
+  top: 130px;
+  left: 710px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(7){
+  position: absolute;
+  top: 130px;
+  left: 710px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(8){
+  position: absolute;
+  top: 130px;
+  left: 710px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(9){
+  position: absolute;
+  top: 130px;
+  left: 610px;
+  height: 3px;
+  width: 3px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(10){
+  position: absolute;
+  top: 230px;
+  left: 100px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(11){
+  position: absolute;
+  top: 150px;
+  left: 10px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(12){
+  position: absolute;
+  top: 130px;
+  left: 0px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(13){
+  position: absolute;
+  top: 200px;
+  left: 810px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(14){
+  position: absolute;
+  top: 130px;
+  left: 710px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(15){
+  position: absolute;
+  top: 110px;
+  left: 720px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(16){
+  position: absolute;
+  top: 180px;
+  left: 610px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.star :nth-child(17){
+  position: absolute;
+  top: 230px;
+  left: 810px;
+  height: 2px;
+  width: 2px;
+  animation-name: starTwinkle;
+  animation-duration: 1s;
+  animation-delay: .8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate-reverse;
+}
+.sailboat :nth-child(1) {
+  height: 60px;
+  width: 40px;
+  position: absolute;
+  top: 330px;
+  left: 450px;
+  animation-delay: 0.5s;
+  animation-name: sailAway;
+  animation-duration: 50s;
+  animation-direction: reverse;
+}
+.sailboat :nth-child(2){
+  height: 40px;
+  width: 30px;
+  position: absolute;
+  top: 345px;
+  left: 10px;
+  animation-name: sailAway;
+  animation-duration: 120s;
+}
+.sailboat :nth-child(3){
+  height: 80px;
+  width: 60px;
+  position: absolute;
+  top: 320px;
+  left: 10px;
+  animation-name: sailAway;
+  animation-duration: 80s;
+}
 .videos{
   height: 600px;
   width: 1000px;
@@ -113,7 +408,7 @@ li a:hover {
   color: black;
 }
 
-.animated-text:nth-child(1){
+.animated-text{
   position: absolute;
   top: 100px;
   left: 90px;
@@ -149,3 +444,49 @@ li a:hover {
     opacity: 1;
   }
 }
+
+@keyframes sailAway{
+  from{
+    transform: translateX(0);
+  }
+  to{
+    transform: translateX(500px);
+  }
+}
+
+@keyframes starTwinkle{
+  from{
+    opacity: 0;
+    transform: scale3d(0);
+  }
+  to{
+    opacity: 1;
+  transform: scale3d(1);
+  }
+}
+
+@keyframes cometRide{
+from{
+transform: translate(300px, -50px);
+}
+to{
+transform: translate(-1400px, 200px);
+}
+}
+@keyframes sateliteHover{
+from{
+transform: translate(0, 0) rotateX(0deg);
+}
+to{
+transform: translate(15px, 14px) rotateX(30deg);
+}
+}
+@keyframes spaceLaunch{
+from{
+transform: translate(0, 0) rotateX(0deg);
+}
+to{
+transform: translate(-60px, -700px) rotateX(5deg);
+}
+}
+
