@@ -10,7 +10,7 @@
   color:ivory;
 }
 .home{
-  height: 600px;
+  height: 550px;
   width: 1000px;
   text-align: center;
   background-image: url('./assets/new-background-image.png');
@@ -26,6 +26,11 @@
   background-size: contain;
   text-align:center;
   color:ivory;
+}
+
+.modal-image{
+  height: 100px;
+  width: 100px;
 }
 .comet :nth-child(1){
     position: absolute;
@@ -332,7 +337,7 @@
   color:ivory;
 }
 .projects{
-  height: 600px;
+  height: 590px;
   width: 1000px;
   text-align: center;
   background-image: url('./assets/projects-background-image.png');
@@ -340,7 +345,24 @@
   text-align:center;
   color:ivory;
 }
+.astronaut{
+  margin: 20px;
+  animation-name: astronautFloat;
+  animation-duration: 3s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  rotate: '150deg';
+  display: table-cell;
+  flex-wrap: wrap;
 
+}
+
+.project-astronauts {
+  position: absolute;
+  top: 200px;
+  flex-wrap: wrap;
+}
 .App-logo {
   height: 40vmin;
   pointer-events: none;
@@ -367,6 +389,16 @@
   color: #61dafb;
 }
 
+footer{
+  font-size: 10px;
+}
+
+.modal{
+  z-index: 3;
+  align-items: center;
+  justify-content: center;
+  display: contents;
+}
 nav{
   display: flex;
   justify-content: space-around;
@@ -487,6 +519,14 @@ transform: translate(0, 0) rotateX(0deg);
 }
 to{
 transform: translate(-60px, -700px) rotateX(5deg);
+}
+}
+@keyframes astronautFloat{
+from{
+transform: translate(0, 0) rotateY(0deg);
+}
+to{
+transform: translate(10px, 10px) rotateY(20deg);
 }
 }
 
