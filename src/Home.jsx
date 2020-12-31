@@ -3,6 +3,10 @@ import Star1 from './assets/star1.png'
 import './App.css'
 import Comet from './assets/comet.png'
 import Star2 from './assets/star-twinkle.png'
+import NorthStar from './assets/north-star.png'
+import GitLogo from './assets/github.png'
+import MediumLogo from './assets/medium.png'
+import LinkedInLogo from './assets/linkedin.png'
 class Home extends Component {
 
   // top: 120px;
@@ -53,11 +57,28 @@ class Home extends Component {
       <h1 className = "animated-text">
           Software Engineer
       </h1>
+      <div className = "logo-container">
+        <a href = "https://github.com/seanytdawg" target = "_blank" >
+      <img src = {GitLogo} className = "logo"/>
+        </a >
+        <a href = "https://www.linkedin.com/in/sean-tarzy-997076110/" target = "_blank">
+      <img src = {LinkedInLogo} className = "logo"/>
+        </a>
+        <a href = "https://seantarzy.medium.com/" target = "_blank">
+      <img src = {MediumLogo} className = "logo"/>
+        </a>
+      </div>
+              <img src = {NorthStar} className = "north-star" />
       <div className = "comet">
 
         <img src = {Comet} />
       </div>
       <div className = "star">
+      <img src = {Star1} />
+      <img src = {Star1} />
+      <img src = {Star1} />
+      <img src = {Star1} />
+      <img src = {Star1} />
       <img src = {Star1} />
       <img src = {Star1} />
       <img src = {Star1} />

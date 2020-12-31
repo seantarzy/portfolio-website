@@ -6,8 +6,12 @@ class Videos extends Component {
     render() {
         return (
             <div className = "videos">
-                <text>Coming Soon</text>
-
+                <div className = "videos-animated-text" >
+                    <text>Coming Soon</text>
+                </div>
+                {/* <div className = "videos-animated-text" >
+                <h1 >Coming Soon</h1>
+                </div> */}
                 <div className = "satelite">
                     <img src = {Satelite}/>
                     <img src = {Satelite}/>
