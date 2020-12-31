@@ -51,7 +51,7 @@ class Projects extends Component {
     return (
       <div className="projects">
         <div className="projects-animated-text">
-          <h1>Projects</h1>
+          <h1 >Projects</h1>
           <h2>Click on an astronaut below</h2>
         </div>
         <div className="spaceship">

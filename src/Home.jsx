@@ -51,12 +51,15 @@ class Home extends Component {
         return (
      <div className="home">
         <div className="App-header">
+          <div className  = "home-head-text">
+
       <h1 className = "animated-text">
           Sean Tarzy
       </h1>
       <h1 className = "animated-text">
           Software Engineer
       </h1>
+          </div>
       <div className = "logo-container">
         <a href = "https://github.com/seanytdawg" target = "_blank" >
       <img src = {GitLogo} className = "logo"/>

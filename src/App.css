@@ -1,54 +1,73 @@
+html{
+    background: no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
 .blogs{
   margin-top: 0%;
-    background-image: url('./assets/blogs-background-image.png');
+  background: url('./assets/blogs-background-image.png') center center fixed no-repeat;;
   text-align: center;
-  background-size: contain;
-  height: 600px;
-  width: 1000px;
+  background-size: cover;
+  height: 1000px;
+  width: 100%;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
   text-align:center;
   border-radius: 0px;
   color:ivory;
-  zoom: 150%
+  zoom: 150%;
+  overflow: hidden;
 }
 .home{
   height: 100%;
   width: 100%;
   text-align: center;
-  background-image: url('./assets/new-background-image.png');
-  background-size: contain;
+  background: url('./assets/home-background.png') center center fixed no-repeat;
+  background-size: cover;
   text-align:center;
   color:ivory;
   zoom: 140%;
+
 }
 .about{
-  height: 600px;
-  width: 1000px;
+  height: 10000px;
+  width: 12000px;
   text-align: center;
-  background-image: url('./assets/about-background-image.png');
-  background-size: contain;
+  background: url('./assets/about-background-image.png') no-repeat center center fixed;
+  background-size: cover;
   text-align:center;
   color:ivory;
   zoom: 150%;
+  overflow: hidden;
 }
 .videos{
-  height: 600px;
-  width: 1000px;
+  height: 10000px;
+  width: 100%;
   text-align: center;
-  background-image: url('./assets/videos-background-image.png');
-  background-size: contain;
+  background: url('./assets/videos-background-image.png') center center fixed no-repeat;;
+  background-size: cover;
   text-align:center;
-  zoom: 150%;
   color:ivory;
+  zoom: 75%;
+  overflow: hidden;
 }
 .projects{
-  height: 590px;
-  width: 1000px;
+  height: 10000px;
+  width: 10000px;
   text-align: center;
-  background-image: url('./assets/projects-background-image.png');
-  background-size: contain;
+  background: url('./assets/projects-background-image.png') center center fixed no-repeat;
+  background-size: cover;
   text-align:center;
   color:ivory;
-  zoom: 150%;
+  zoom: 125%;
+    overflow: hidden;
+
 }
 .modal-image{
   height: 100px;
@@ -186,8 +205,8 @@
 .spaceship :nth-child(1){
   position: absolute;
   top: 500px;
-  width: 10%;
-  height: 30%;
+  width: 50px;
+  height: 80px;
   animation-name: spaceLaunch;
   animation-duration: 3s;
   animation-fill-mode: forwards;
@@ -198,7 +217,7 @@
       width: 10%;
       height: 10%;
       top: 350px;
-      left: 650px;
+      left: 1650px;
       animation-name: sateliteHover;
       animation-duration: 3s;
       animation-direction: alternate;
@@ -210,7 +229,7 @@
       position: absolute;
       width: 15%;
       height: 15%;
-      top: 100px;
+      top: 600px;
       left: 520px;
       animation-name: sateliteHover;
       animation-duration: 3s;
@@ -240,7 +259,7 @@
 }
 .blog-container{
   position: absolute;
-  top: 400px;
+  top: 300px;
   flex-direction: row;
 }
 
@@ -254,9 +273,8 @@
       animation-fill-mode: both;
       animation-timing-function: ease-in-out;
       float: left;
-        margin-right: 100px;
-        display: table-cell;
-
+      margin-right: 100px;
+      display: table-cell;
 }
 .blog-container :nth-child(2){
       width: 60px;
@@ -270,7 +288,7 @@
       animation-timing-function: ease-in-out;
       float: left;
       margin-right: 100px;
-        display: table-cell;
+      display: table-cell;
 
 }
 .blog-container :nth-child(3){
@@ -285,12 +303,12 @@
       float: left;
       margin-right: 100px;
       animation-delay: .8s;
-      display: table-cell;
+      display: table-cell;    
 }
 
 .logo-container{
 position: absolute;
-left: 80px;
+left: 110px;
 top: 250px;
 flex-direction: row;
 }
@@ -310,7 +328,12 @@ height: 40px;
 width: 50px;
 }
 
-
+.home-head-text{
+  /* position: absolute;
+  font-size: 18px;
+  top: -20px;
+  left: -50 */
+}
 .north-star{
   position: absolute;
   top: 65px;
@@ -333,6 +356,8 @@ width: 50px;
 
 .star :nth-child(1){
   position: absolute;
+  top: 300px;
+  left: 850px;
   height: 2px;
   width: 2px;
   animation-name: starTwinkle;
@@ -376,7 +401,7 @@ width: 50px;
 }
 .star :nth-child(5){
   position: absolute;
-  top: 220px;
+  top: 250px;
   left: 450px;
   height: 2px;
   width: 2px;
@@ -387,7 +412,7 @@ width: 50px;
 }
 .star :nth-child(6){
   position: absolute;
-  top: 130px;
+  top: 100px;
   left: 710px;
   height: 2px;
   width: 2px;
@@ -399,7 +424,7 @@ width: 50px;
 }
 .star :nth-child(7){
   position: absolute;
-  top: 130px;
+  top: 105px;
   left: 710px;
   height: 2px;
   width: 2px;
@@ -411,7 +436,7 @@ width: 50px;
 }
 .star :nth-child(8){
   position: absolute;
-  top: 130px;
+  top: 165px;
   left: 710px;
   height: 2px;
   width: 2px;
@@ -423,7 +448,7 @@ width: 50px;
 }
 .star :nth-child(9){
   position: absolute;
-  top: 130px;
+  top: 120px;
   left: 610px;
   height: 3px;
   width: 3px;
@@ -435,7 +460,7 @@ width: 50px;
 }
 .star :nth-child(10){
   position: absolute;
-  top: 230px;
+  top: 170px;
   left: 100px;
   height: 2px;
   width: 2px;
@@ -459,7 +484,7 @@ width: 50px;
 }
 .star :nth-child(12){
   position: absolute;
-  top: 130px;
+  top: 110px;
   left: 0px;
   height: 2px;
   width: 2px;
@@ -471,7 +496,7 @@ width: 50px;
 }
 .star :nth-child(13){
   position: absolute;
-  top: 200px;
+  top: 80px;
   left: 810px;
   height: 2px;
   width: 2px;
@@ -483,7 +508,7 @@ width: 50px;
 }
 .star :nth-child(14){
   position: absolute;
-  top: 130px;
+  top: 108px;
   left: 710px;
   height: 2px;
   width: 2px;
@@ -495,7 +520,7 @@ width: 50px;
 }
 .star :nth-child(15){
   position: absolute;
-  top: 110px;
+  top: 98px;
   left: 720px;
   height: 2px;
   width: 2px;
@@ -507,7 +532,7 @@ width: 50px;
 }
 .star :nth-child(16){
   position: absolute;
-  top: 180px;
+  top: 80px;
   left: 610px;
   height: 2px;
   width: 2px;
@@ -519,7 +544,7 @@ width: 50px;
 }
 .star :nth-child(17){
   position: absolute;
-  top: 230px;
+  top: 113px;
   left: 810px;
   height: 2px;
   width: 2px;
@@ -555,7 +580,7 @@ width: 50px;
 }
 .star :nth-child(20){
   position: absolute;
-  top: 160px;
+  top: 110px;
   left: 810px;
   height: 2px;
   width: 2px;
@@ -593,7 +618,7 @@ width: 50px;
   height: 60px;
   width: 40px;
   position: absolute;
-  top: 330px;
+  top: 270px;
   left: 450px;
   animation-delay: 0.5s;
   animation-name: sailAway;
@@ -604,8 +629,8 @@ width: 50px;
 .sailboat :nth-child(2){
   height: 40px;
   width: 30px;
-  position: absolute;
-  top: 345px;
+  position: fixed;
+  top: 270px;
   left: 10px;
   animation-name: sailAway;
   animation-duration: 120s;
@@ -615,8 +640,8 @@ width: 50px;
 .sailboat :nth-child(3){
   height: 80px;
   width: 60px;
-  position: absolute;
-  top: 320px;
+  position: fixed;
+  top: 300px;
   left: 10px;
   animation-name: sailAway;
   animation-duration: 80s;
@@ -686,12 +711,14 @@ width: 50px;
 
 .App-header {
   /* background-color: #282c34; */
+  /* position: absolute; */
   min-height: 100vh;
+  top: -20px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  font-size: calc(8px + 2vmin);
   color: white;
 }
 
@@ -767,6 +794,7 @@ li a:hover {
   animation-duration: 2s;
 }
 .videos-animated-text :nth-child(1){
+  font-size: 50px;
   animation-name: fadeAndScale;
   animation-duration: 2s;
 }
