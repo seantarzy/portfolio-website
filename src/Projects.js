@@ -58,9 +58,7 @@ class Projects extends Component {
           <img src={Spaceship} />
         </div>
         <div className="project-astronauts">
-          <div className = "astronaut-container">
-
-          </div>
+          <div className="astronaut-container"></div>
           {this.state.featuredProject ? (
             <Modal
               isOpen={this.state.showModal}
@@ -78,9 +76,15 @@ class Projects extends Component {
                   src={this.state.featuredProject.imageSrc}
                   className="modal-image"
                 />
+
+                <footer>Tools Used: {this.state.featuredProject.tools}</footer>
                 <footer>
                   Link:
-                  <a href={this.state.featuredProject.link} target="_blank">
+                  <a
+                    href={this.state.featuredProject.link}
+                    target="_blank"
+                    className="project-link"
+                    >
                     {this.state.featuredProject.name}
                   </a>
                 </footer>
