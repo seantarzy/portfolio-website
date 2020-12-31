@@ -205,6 +205,7 @@ html{
 .spaceship :nth-child(1){
   position: absolute;
   top: 500px;
+  left: 600px;
   width: 50px;
   height: 80px;
   animation-name: spaceLaunch;

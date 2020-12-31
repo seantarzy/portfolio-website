@@ -11,7 +11,6 @@ state = {
 }
 
 setFeaturedAndOpen = (e, blog)=>{
-    console.log("clicked")
     e.preventDefault()
     this.setState({featuredBlog: blog, showModal: true})
 }
@@ -46,7 +45,7 @@ setFeaturedAndOpen = (e, blog)=>{
                     </h2>
                     </div>
                 <div className = "sailboat">
-                <img src={SailBoat} className = "sailboat"/>
+                <img src={SailBoat} className = "sailboat" />
                 <img src={SailBoat} className = "sailboat"/>
                 <img src={SailBoat} className = "sailboat"/>
                 </div>

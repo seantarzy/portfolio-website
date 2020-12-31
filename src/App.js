@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import React from 'react'
 import NavBar from './NavBar'
@@ -13,11 +12,8 @@ import teacherToCoder from "./assets/teacher-to-coder.png";
 import genuineLeader from "./assets/genuine-leader.png";
 import Babe from './assets/babe-ruth.png'
 import {
-  Switch,
   Route,
-  withRoute,
   BrowserRouter as Router,
-  Redirect,
 } from "react-router-dom";
 
 class App extends React.Component {
