@@ -51,7 +51,7 @@ class Projects extends Component {
     return (
       <div className="projects">
         <div className="projects-animated-text">
-          <h1 >Projects</h1>
+          <h1>Projects</h1>
           <h2>Click on an astronaut below</h2>
         </div>
         <div className="spaceship">
@@ -61,31 +61,35 @@ class Projects extends Component {
           <div className="astronaut-container"></div>
           {this.state.featuredProject ? (
             <Modal
+              scrollable={true}
               isOpen={this.state.showModal}
               onRequestClose={this.handleClose}
               animation={false}
               className="modal"
+              scrollable={true}
             >
               <p className="x-box" onClick={this.handleClose}>
                 ☒
               </p>
               <div className="modal-body">
-                <h1>{this.state.featuredProject.name}</h1>
+                <h2>{this.state.featuredProject.name}</h2>
                 <p>{this.state.featuredProject.description}</p>
-                <img
-                  src={this.state.featuredProject.imageSrc}
-                  className="modal-image"
-                />
 
-                <footer>Tools Used: {this.state.featuredProject.tools}</footer>
+                <h5>Tools Used: {this.state.featuredProject.tools}</h5>
                 <footer>
-                  Link:
+                  Click me
+                  <br>
+                  </br>
                   <a
                     href={this.state.featuredProject.link}
                     target="_blank"
                     className="project-link"
-                    >
-                    {this.state.featuredProject.name}
+                  >
+                    <img
+                      src={this.state.featuredProject.imageSrc}
+                      className="modal-image"
+                    />
+                    {/* {this.state.featuredProject.name} */}
                   </a>
                 </footer>
               </div>

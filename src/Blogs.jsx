@@ -57,19 +57,22 @@ setFeaturedAndOpen = (e, blog)=>{
               animation={false}
               className="modal"
             >
+              <div className="modal-body" scrollable = {true}>
               <p className = "x-box" onClick = {this.handleClose}>☒</p>
-              <div className="modal-body">
-                <h1>{this.state.featuredBlog.title}</h1>
+                <h2>{this.state.featuredBlog.title}</h2>
                 <p>{this.state.featuredBlog.description}</p>
+                <footer className = "modal-footer">
+                  Click me
+                  <br>
+                  </br>
+                  <a href={this.state.featuredBlog.link} target="_blank">
+                    {/* {this.state.featuredBlog.title} */}
                 <img
                   src={this.state.featuredBlog.imageSrc}
                   className="modal-image"
-                />
-                <footer>
-                  Link:
-                  <a href={this.state.featuredBlog.link} target="_blank">
-                    {this.state.featuredBlog.title}
+                  />
                   </a>
+                  
                 </footer>
               </div>
             </Modal>

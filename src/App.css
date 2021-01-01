@@ -16,7 +16,7 @@ html{
   background: url('./assets/blogs-background-image.png') center center fixed no-repeat;;
   text-align: center;
   background-size: cover;
-  height: 1000px;
+  height: 1800px;
   width: 100%;
   white-space: nowrap;
   text-align:center;
@@ -24,7 +24,7 @@ html{
   bottom: -100px;
   color:ivory;
   zoom: 150%;
-  overflow: hidden;
+  overflow: auto;
 }
 .home{
   height: 100%;
@@ -40,7 +40,7 @@ html{
 }
 .about{
   text-align:center;
-  height: 1500px;
+  height: 1800px;
   margin-right: 0%;
   width: 100%;
   text-align: center;
@@ -51,7 +51,7 @@ html{
   overflow: scroll;
 }
 .videos{
-  height: 1500px;
+  height: 1800px;
   margin-right: 0%;
   width: 100%;
   text-align: center;
@@ -65,7 +65,7 @@ html{
 }
 .projects{
   width: 100%;
-  height: 1500px;
+  height: 1800px;
   margin-top: 0%;
   margin-right: 0%;
   text-align: center;
@@ -73,7 +73,7 @@ html{
   background-size: cover;
   text-align:center;
   color:ivory;
-    overflow:scroll;
+  overflow:scroll;
 
 }
 .modal-image{
@@ -86,7 +86,7 @@ html{
     width: 10%;
     height: 5%;
     top: 100px;
-    left: 970px;
+    left: 770px;
     animation: cometRide;
     animation-duration: 15s;
     animation-fill-mode: forwards;
@@ -211,7 +211,6 @@ html{
 
 .spaceship :nth-child(1){
   position: absolute;
-  top: 500px;
   left: 600px;
   width: 50px;
   height: 80px;
@@ -734,19 +733,27 @@ width: 50px;
   color: #61dafb;
 }
 
+.modal-footer{
+  font-size: 15px;
+}
+
 footer{
   font-size: 10px;
 }
 
 .modal{
-  z-index: 3;
+  z-index: 9999;
+  font-size: 30px;
   align-items: center;
   justify-content: center;
   display: contents;
+  scroll-behavior: smooth;
+  overflow-y: auto;
+  
 }
 
 .modal-body{
-  width: 400px;
+  width: 500px;
   margin-left: 200px;
   position: relative;
   align-items: center;
@@ -866,7 +873,7 @@ li a:hover {
 }
 .projects-animated-text{
   position: absolute;
-  top: 100px;
+  top: 200px;
   left: 90px;
   font-size: 20px;
 }
@@ -940,7 +947,7 @@ transform: translate(0px, -50px)
  /* rotateX('0deg'); */
 }
 to{
-transform: translate(-1400px, 400px) 
+transform: translate(-1000px, 400px) 
 /* rotateX('30deg'); */
 }
 }
@@ -954,10 +961,10 @@ transform: translate(15px, 14px) rotateX(30deg);
 }
 @keyframes spaceLaunch{
 from{
-transform: translate(0, 0) rotateX(0deg);
+transform: translate(200px, 1200px) rotateX(0deg);
 }
 to{
-transform: translate(-60px, -700px) rotateX(5deg);
+transform: translate(-60px, -500px) rotateX(5deg);
 }
 }
 @keyframes astronautFloat{
