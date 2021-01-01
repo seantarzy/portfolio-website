@@ -51,12 +51,12 @@ class Home extends Component {
         return (
      <div className="home">
         <div className="App-header">
+          
           <div className  = "home-head-text">
-
-      <h1 className = "animated-text">
+      <h1 className = "home-animated-text">
           Sean Tarzy
       </h1>
-      <h1 className = "animated-text">
+      <h1 className = "home-animated-subtext">
           Software Engineer
       </h1>
           </div>

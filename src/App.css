@@ -317,7 +317,7 @@ html{
 .logo-container{
 position: absolute;
 left: 110px;
-top: 250px;
+top: 330px;
 flex-direction: row;
 }
 .logo-container :nth-child(1){
@@ -339,7 +339,7 @@ width: 50px;
 .home-head-text{
   /* position:sticky; */
   /* font-size: 18px; */
-  top: 20px
+  top: 60px
   /* left: -50 */ 
 }
 .north-star{
@@ -808,6 +808,20 @@ li a:hover {
   animation-name: fadeAndScale;
   animation-duration: 2s;
 }
+.home-animated-text{
+  position: absolute;
+  top: 150px;
+  left: 90px;
+  animation-name: fadeAndScale;
+  animation-duration: 2s;
+}
+.home-animated-subtext{
+  position: absolute;
+  top: 210px;
+  left: 90px;
+  animation-name: fadeAndScale;
+  animation-duration: 2s;
+}
 .animated-text{
   position: absolute;
   top: 100px;
@@ -916,16 +930,18 @@ li a:hover {
   }
   to{
     opacity: 1;
-  transform: scale3d(1) rotateX('50deg');;
+  transform: scale3d(1) rotateX('50deg');
   }
 }
 
 @keyframes cometRide{
 from{
-transform: translate(0px, -50px);
+transform: translate(0px, -50px)
+ /* rotateX('0deg'); */
 }
 to{
-transform: translate(-1400px, 200px);
+transform: translate(-1400px, 400px) 
+/* rotateX('30deg'); */
 }
 }
 @keyframes sateliteHover{
