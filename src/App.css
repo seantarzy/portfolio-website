@@ -1,4 +1,6 @@
 html{
+   margin-top: 0%;
+  margin-bottom: 0%;
     background: no-repeat center center fixed; 
   -webkit-background-size: cover;
   -moz-background-size: cover;
@@ -10,63 +12,68 @@ html{
 }
 .blogs{
   margin-top: 0%;
+  margin-bottom: 0%;
   background: url('./assets/blogs-background-image.png') center center fixed no-repeat;;
   text-align: center;
   background-size: cover;
   height: 1000px;
   width: 100%;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
-  -o-background-size: cover;
+  white-space: nowrap;
   text-align:center;
   border-radius: 0px;
+  bottom: -100px;
   color:ivory;
   zoom: 150%;
   overflow: hidden;
 }
 .home{
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   text-align: center;
   background: url('./assets/home-background.png') center center fixed no-repeat;
   background-size: cover;
   text-align:center;
   color:ivory;
-  zoom: 140%;
-
+  /* zoom: 140%; */
+   margin-top: 0%;
+  margin-bottom: 0%;
 }
 .about{
-  height: 10000px;
-  width: 12000px;
+  text-align:center;
+  height: 1500px;
+  margin-right: 0%;
+  width: 100%;
   text-align: center;
   background: url('./assets/about-background-image.png') no-repeat center center fixed;
   background-size: cover;
   text-align:center;
   color:ivory;
-  zoom: 150%;
-  overflow: hidden;
+  overflow: scroll;
 }
 .videos{
-  height: 10000px;
+  height: 1500px;
+  margin-right: 0%;
   width: 100%;
   text-align: center;
   background: url('./assets/videos-background-image.png') center center fixed no-repeat;;
   background-size: cover;
-  text-align:center;
   color:ivory;
-  zoom: 75%;
-  overflow: hidden;
+  /* zoom: 75%; */
+   margin-top: 0%;
+  margin-bottom: 0%;
+  overflow: scroll;
 }
 .projects{
-  height: 10000px;
-  width: 10000px;
+  width: 100%;
+  height: 1500px;
+  margin-top: 0%;
+  margin-right: 0%;
   text-align: center;
   background: url('./assets/projects-background-image.png') center center fixed no-repeat;
   background-size: cover;
   text-align:center;
   color:ivory;
-  zoom: 125%;
-    overflow: hidden;
+    overflow:scroll;
 
 }
 .modal-image{
@@ -79,7 +86,7 @@ html{
     width: 10%;
     height: 5%;
     top: 100px;
-    left: 1020px;
+    left: 970px;
     animation: cometRide;
     animation-duration: 15s;
     animation-fill-mode: forwards;
@@ -218,7 +225,7 @@ html{
       width: 10%;
       height: 10%;
       top: 350px;
-      left: 1650px;
+      left: 650px;
       animation-name: sateliteHover;
       animation-duration: 3s;
       animation-direction: alternate;
@@ -244,7 +251,7 @@ html{
       position: absolute;
       width: 13%;
       height: 13%;
-      top: 100px;
+      top: 200px;
       left: 220px;
       animation-name: sateliteHover;
       animation-duration: 3s;
@@ -330,10 +337,10 @@ width: 50px;
 }
 
 .home-head-text{
-  /* position: absolute;
-  font-size: 18px;
-  top: -20px;
-  left: -50 */
+  /* position:sticky; */
+  /* font-size: 18px; */
+  top: 20px
+  /* left: -50 */ 
 }
 .north-star{
   position: absolute;
@@ -619,8 +626,8 @@ width: 50px;
   height: 60px;
   width: 40px;
   position: absolute;
-  top: 270px;
-  left: 450px;
+  top: 579px;
+  left: 100px;
   animation-delay: 0.5s;
   animation-name: sailAway;
   animation-duration: 50s;
@@ -652,7 +659,7 @@ width: 50px;
 
 .astronaut-container{
   position: absolute;
-  top: 40px
+  top: 240px
 }
 
 .astronaut-container :nth-child(1){
@@ -791,6 +798,8 @@ li a:hover {
 }
 
 .about-animated-text{
+  position: sticky;
+  /* top: 40px; */
   animation-name: fadeAndScale;
   animation-duration: 2s;
 }
@@ -868,7 +877,7 @@ li a:hover {
 .about-sean{
   align-content: center;
   position: absolute;
-  top: 60px;
+  top: 190px;
   left: 250px
 }
 @keyframes fadeAndScale{
