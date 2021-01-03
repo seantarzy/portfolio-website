@@ -17,8 +17,10 @@ setFeaturedAndOpen = (e, blog)=>{
     componentDidMount = ()=>{
         this.props.blogs.forEach((blog)=>{
             let blogDiv = document.createElement('div')
+
             let bookImg = document.createElement('img')
             bookImg.src = Book
+            bookImg.className = "book-image"
             blogDiv.append(bookImg)
             let blogTitle = document.createElement('footer')
             blogTitle.innerText = blog.title
@@ -57,7 +59,7 @@ setFeaturedAndOpen = (e, blog)=>{
               animation={false}
               className="modal"
             >
-              <div className="modal-body" scrollable = {true}>
+              <div className="modal-body" >
               <p className = "x-box" onClick = {this.handleClose}>☒</p>
                 <h2>{this.state.featuredBlog.title}</h2>
                 <p>{this.state.featuredBlog.description}</p>

@@ -87,13 +87,13 @@ html{
     width: 10%;
     height: 5%;
     top: 100px;
-    left: 870px;
+    /* left: 870px; */
     animation: cometRide;
     animation-duration: 10s;
-    animation-fill-mode: forwards;
+    animation-fill-mode: both;
     animation-iteration-count: 3;
     animation-timing-function: linear;
-    animation-delay: 0.5s;
+    animation-delay: 1.5s;
 }
 
 .space-rocks :nth-child(1){
@@ -114,9 +114,7 @@ html{
   left: 470px;
   animation: rockFloat;
   animation-duration: 5s;
-  animation-direction: forward;
   animation-fill-mode: forwards;
-
 }
 .space-rocks :nth-child(3){
   position: absolute;
@@ -127,7 +125,6 @@ html{
   animation: rockFloat;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-
 }
 .space-rocks :nth-child(4){
   position: absolute;
@@ -138,8 +135,6 @@ html{
   animation: rockFloat;
   animation-duration: 5s;
   animation-fill-mode: forwards;
-
-
 }
 .space-rocks :nth-child(5){
   position: absolute;
@@ -265,10 +260,15 @@ html{
 .project-link{
   font-size: 15px;
 }
+
+.book-image{
+  margin-left: 50px;
+}
 .blog-container{
   position: absolute;
   top: 300px;
   flex-direction: row;
+  align-items: center;
 }
 
 .blog-container :nth-child(1){
@@ -283,6 +283,9 @@ html{
       float: left;
       margin-right: 100px;
       display: table-cell;
+      /* justify-content: center; */
+      /* text-align: center; */
+
 }
 .blog-container :nth-child(2){
       width: 60px;
@@ -317,23 +320,23 @@ html{
 .logo-container{
 position: absolute;
 left: 110px;
-top: 350px;
+top: 370px;
 flex-direction: row;
 }
 .logo-container :nth-child(1){
 position: relative;
-height: 40px;
-width: 50px;
+height: 50px;
+width: 60px;
 }
 .logo-container :nth-child(2){
 position: relative;
-height: 40px;
-width: 40px;
+height: 50px;
+width: 50px;
 }
 .logo-container :nth-child(3){
 position: relative;
-height: 40px;
-width: 50px;
+height: 50px;
+width: 60px;
 }
 
 .home-head-text{
@@ -626,23 +629,23 @@ width: 50px;
   height: 60px;
   width: 40px;
   position: absolute;
-  top: 579px;
+  top: 629px;
   left: 100px;
   animation-delay: 0.5s;
   animation-name: sailAway;
   animation-duration: 50s;
   animation-direction: reverse;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 .sailboat :nth-child(2){
   height: 40px;
   width: 30px;
   position: fixed;
-  top: 270px;
+  top: 288px;
   left: 10px;
   animation-name: sailAway;
   animation-duration: 120s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 
 }
 .sailboat :nth-child(3){
@@ -653,7 +656,7 @@ width: 50px;
   left: 10px;
   animation-name: sailAway;
   animation-duration: 80s;
-  animation-fill-mode: forwards;
+  animation-fill-mode: both;
 }
 
 
@@ -698,7 +701,6 @@ width: 50px;
   rotate: '150deg';
   display: table-cell;
   flex-wrap: wrap;
-
 }
 
 .project-astronauts {
@@ -740,17 +742,29 @@ width: 50px;
 
 footer{
   font-size: 10px;
+  word-wrap: normal;
+  text-align: center;
+   width: 100%;
+    padding: 1rem;
+    margin: .2rem .5rem;
+    text-align: center;
+    transition: 200ms;
+  /* width: 10px; */
+  /* text-align: center; */
+  /* overflow-wrap:unset; */
+  /* flex-wrap: wrap; */
+  /* margin-top: auto; */
+  /* position: sticky; */
 }
 
 .modal{
-  z-index: 9999;
+  z-index: 9999px;
   font-size: 30px;
   align-items: center;
   justify-content: center;
   display: contents;
   scroll-behavior: smooth;
   overflow-y: auto;
-  
 }
 
 .modal-body{
@@ -818,14 +832,14 @@ li a:hover {
 }
 .home-animated-text{
   position: absolute;
-  top: 150px;
+  top: 170px;
   left: 90px;
   animation-name: fadeAndScale;
   animation-duration: 2s;
 }
 .home-animated-subtext{
   position: absolute;
-  top: 210px;
+  top: 230px;
   left: 90px;
   animation-name: fadeAndScale;
   animation-duration: 2s;
@@ -854,8 +868,9 @@ li a:hover {
   font-size: 20px;
 }
 .blogs-animated-text :nth-child(1){
-  top: 100px;
-  left: 90px;
+  position: absolute;
+  top: 30px;
+  left: 70px;
   font-size: 40px;
   animation-name: fadeAndScale;
   animation-duration: 2s;
@@ -863,8 +878,9 @@ li a:hover {
   animation-timing-function: ease-in;
 }
 .blogs-animated-text :nth-child(2){
+  position: absolute;
   top: 100px;
-  left: 90px;
+  left: 70px;
   font-size: 20px;
   animation-name: fadeAndScale;
   animation-duration: 2s;
@@ -879,14 +895,18 @@ li a:hover {
   font-size: 20px;
 }
 .projects-animated-text :nth-child(1){
+  position: absolute;
   left: 90px;
-  font-size: 40px;
+  font-size: 60px;
   animation-name: fadeAndScale;
   animation-duration: 2s;
   animation-fill-mode: forwards;
   animation-timing-function: ease-in;
 }
 .projects-animated-text :nth-child(2){
+  position: absolute;
+  top: 100px;
+  width: 200px;
   left: 90px;
   font-size: 20px;
   animation-name: fadeAndScale;
@@ -944,10 +964,12 @@ li a:hover {
 
 @keyframes cometRide{
 from{
-transform: translate(0px, -50px)
+  opacity: 0;
+transform: translate(400px, -50px)
  /* rotateX('0deg'); */
 }
 to{
+opacity: 1;
 transform: translate(-1000px, 300px) 
 /* rotateX('30deg'); */
 }
